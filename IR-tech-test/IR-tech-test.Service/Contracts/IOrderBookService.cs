@@ -1,5 +1,4 @@
-﻿using IR_tech_test.Enums;
-using IR_tech_test.Service.Models;
+﻿using IR_tech_test.Service.Models;
 using IR_tech_test.Service.Models.Api;
 using System.Collections.Generic;
 using System.Threading.Tasks;

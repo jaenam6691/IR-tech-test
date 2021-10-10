@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IR-tech-test", "IR-tech-test\IR-tech-test.csproj", "{F1A68F8E-788E-4678-AC2B-EBF18322DD22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IR-tech-test.Api", "IR-tech-test\IR-tech-test.Api.csproj", "{F1A68F8E-788E-4678-AC2B-EBF18322DD22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IR-tech-test.Service", "IR-tech-test.Service\IR-tech-test.Service.csproj", "{1BCE1E0C-C15A-42AC-8FD6-D8D0E6358504}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IR-tech-test.Service", "IR-tech-test.Service\IR-tech-test.Service.csproj", "{1BCE1E0C-C15A-42AC-8FD6-D8D0E6358504}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IR-tech-test.Tests", "IR-tech-test.Tests\IR-tech-test.Tests.csproj", "{0077A8FA-83CC-40D2-945D-6003B5CEF9A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IR-tech-test.Tests", "IR-tech-test.Tests\IR-tech-test.Tests.csproj", "{0077A8FA-83CC-40D2-945D-6003B5CEF9A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IR-tech-test", "IR-test-test\IR-tech-test.csproj", "{B28F4A28-F899-4EF3-B6B5-EA7864025084}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{0077A8FA-83CC-40D2-945D-6003B5CEF9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0077A8FA-83CC-40D2-945D-6003B5CEF9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0077A8FA-83CC-40D2-945D-6003B5CEF9A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B28F4A28-F899-4EF3-B6B5-EA7864025084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B28F4A28-F899-4EF3-B6B5-EA7864025084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B28F4A28-F899-4EF3-B6B5-EA7864025084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B28F4A28-F899-4EF3-B6B5-EA7864025084}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

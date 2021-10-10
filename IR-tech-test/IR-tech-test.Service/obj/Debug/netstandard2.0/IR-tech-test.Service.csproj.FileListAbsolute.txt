@@ -1,0 +1,9 @@
+C:\Users\JAckoff\Documents\IR-tech-test\IR-tech-test\IR-tech-test.Service\bin\Debug\netstandard2.0\IR-tech-test.Service.deps.json
+C:\Users\JAckoff\Documents\IR-tech-test\IR-tech-test\IR-tech-test.Service\bin\Debug\netstandard2.0\IR-tech-test.Service.dll
+C:\Users\JAckoff\Documents\IR-tech-test\IR-tech-test\IR-tech-test.Service\bin\Debug\netstandard2.0\IR-tech-test.Service.pdb
+C:\Users\JAckoff\Documents\IR-tech-test\IR-tech-test\IR-tech-test.Service\obj\Debug\netstandard2.0\IR-tech-test.Service.AssemblyInfoInputs.cache
+C:\Users\JAckoff\Documents\IR-tech-test\IR-tech-test\IR-tech-test.Service\obj\Debug\netstandard2.0\IR-tech-test.Service.AssemblyInfo.cs
+C:\Users\JAckoff\Documents\IR-tech-test\IR-tech-test\IR-tech-test.Service\obj\Debug\netstandard2.0\IR-tech-test.Service.dll
+C:\Users\JAckoff\Documents\IR-tech-test\IR-tech-test\IR-tech-test.Service\obj\Debug\netstandard2.0\IR-tech-test.Service.pdb
+C:\Users\JAckoff\Documents\IR-tech-test\IR-tech-test\IR-tech-test.Service\obj\Debug\netstandard2.0\IR-tech-test.Service.csproj.CoreCompileInputs.cache
+C:\Users\JAckoff\Documents\IR-tech-test\IR-tech-test\IR-tech-test.Service\obj\Debug\netstandard2.0\IR-tech-test.Service.csprojAssemblyReference.cache

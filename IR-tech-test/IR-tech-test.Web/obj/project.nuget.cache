@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hxiF8kVP2vm3ixzCGCkZGGOMnupJ3Ae/7/qL7ZXCPOdCW3LEGO6yTioRumjW0GDFE3tpAZraioPfKjg3LrqURA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Web\\IR-tech-test.Web.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JAckoff\\.nuget\\packages\\fsharp.core\\4.7.1\\fsharp.core.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
