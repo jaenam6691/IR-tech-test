@@ -10,4 +10,5 @@
 - Add integration tests for business logic validation
 
 ## Considerations 
-- WebApi project must be running, not automatically attached 
+- Start up project is IR-tech-test.Web
+- IR-tech-test.Api project must also be running, as it is not automatically attached 
