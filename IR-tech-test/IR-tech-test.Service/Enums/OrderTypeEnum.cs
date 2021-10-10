@@ -2,7 +2,7 @@
 {
   public enum OrderTypeEnum
   {
-    LimitBuy, 
-    LimitBid
+    LimitBid,
+    LimitOffer
   }
 }

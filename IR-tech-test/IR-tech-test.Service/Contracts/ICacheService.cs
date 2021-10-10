@@ -4,6 +4,7 @@ namespace IR_tech_test.Service.Contracts
 {
   public interface ICacheService<T>
   {
-    Task<T> CacheTryGetValueSet(string key, T entries);
+    T Get(string key);
+    void Set(string key, T values);
   }
 }

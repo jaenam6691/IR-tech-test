@@ -1,17 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using IR_tech_test.Service.Contracts;
 using IR_tech_test.Service.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace IR_tech_test
 {
@@ -31,7 +26,10 @@ namespace IR_tech_test
       services.AddControllers();
       services.AddHttpContextAccessor();
 
+      services.AddHostedService<BackgroundTaskService>();
+
       services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
+      services.TryAdd(ServiceDescriptor.Singleton<IMemoryCache, MemoryCache>());
 
       services.AddTransient<IOrderBookService, OrderBookService>();
     }

@@ -1,6 +1,12 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using IR_tech_test.Enums;
 using IR_tech_test.Service.Contracts;
+using IR_tech_test.Service.Models;
+using IR_tech_test.Service.Models.Api;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
 
 namespace IR_tech_test.Controllers
@@ -11,21 +17,43 @@ namespace IR_tech_test.Controllers
   {
     private readonly ILogger<OrderBookController> _logger;
     private readonly IOrderBookService _orderBookService;
-
+    private readonly IMemoryCache _memoryCache;
     public OrderBookController(
       ILogger<OrderBookController> logger,
-      IOrderBookService orderBookService
+      IOrderBookService orderBookService,
+      IMemoryCache memoryCache
       )
     {
       _logger = logger;
       _orderBookService = orderBookService;
+      _memoryCache = memoryCache;
     }
 
-    [HttpGet("{depth:int:min(0)}")]
-    public async Task<IActionResult> Get(int depth)
+    [HttpGet]
+    public async Task<IActionResult> Get()
     {
-      var test = await _orderBookService.Get(depth);
-      return Ok("Hello world");
+      var orders = _memoryCache.Get<OrderBookDto>("orderBook");
+
+      var allOrders = new List<OrderModel>();
+      allOrders.AddRange(orders.BuyOrders);
+      allOrders.AddRange(orders.SellOrders);
+
+      return Ok(orders);
+    }
+
+    [HttpGet("{depth:double:min(0)}")]
+    public async Task<IActionResult> GetCumulativeOrders(double depth)
+    {
+      var orders = _memoryCache.Get<OrderBookDto>("orderBook");
+      if (orders == null)
+      {
+        orders = await _orderBookService.GetAsync();
+        _memoryCache.Set("orderBook", orders);
+      }
+
+      var cumulativeOrders = _orderBookService.GetCumulativeOrders(orders, depth);
+
+      return Ok(cumulativeOrders);
     }
   }
 }

@@ -17,20 +17,16 @@ namespace IR_tech_test.Service.Services
       _cache = memoryCache;
     }
 
-    public Task<T> CacheTryGetValueSet(string key, T entries)
+    public T Get(string key)
     {
-      throw new NotImplementedException();
+      var cacheResponse = _cache.Get<T>(key);
+      return cacheResponse;
     }
 
-    //public async Task<T> CacheTryGetValueSet(string key, T entries)
-    //{
-    //  var cacheEntry = await
-    //    _cache.GetOrCreateAsync(key, entry =>
-    //    {
-
-    //    });
-
-    //  return cacheEntry;
-    //}
+    public void Set(string key, T values)
+    {
+      //Set expiry slightly longer to account for delays with BackgroundTaskService.cs
+      _cache.Set(key, values, TimeSpan.FromSeconds(16));
+    }
   }
 }
