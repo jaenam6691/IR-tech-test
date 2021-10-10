@@ -6,6 +6,6 @@ namespace IR_test_test.Services
 {
   public interface IHomeService
   {
-    Task<ICollection<OrderModel>> GetCumulativeOrders(double depth);
+    Task<ICollection<OrderModel>> GetCumulativeOrdersAsync(double depth);
   }
 }

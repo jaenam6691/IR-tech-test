@@ -20,7 +20,7 @@ namespace IR_test_test.Services
       _logger = logger;
     }
 
-    public async Task<ICollection<OrderModel>> GetCumulativeOrders(double depth)
+    public async Task<ICollection<OrderModel>> GetCumulativeOrdersAsync(double depth)
     {
       var baseUrl = "https://localhost:44363/api/orderbook";
 

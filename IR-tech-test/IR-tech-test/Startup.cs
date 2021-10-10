@@ -32,6 +32,7 @@ namespace IR_tech_test
       services.TryAdd(ServiceDescriptor.Singleton<IMemoryCache, MemoryCache>());
 
       services.AddTransient<IOrderBookService, OrderBookService>();
+      services.AddTransient<IOrderBookCacheService, OrderBookCacheService>();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
