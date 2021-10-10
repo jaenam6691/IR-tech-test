@@ -18,8 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IR-tech-test\IR-tech-test.Api.csproj" />
-    <ProjectReference Include="..\IR-tech-test\IR-tech-test.csproj" />
+    <ProjectReference Include="..\IR-tech-test.Web\IR-tech-test.Web.csproj" />
+    <ProjectReference Include="..\IR-tech-test.Api\IR-tech-test.Api.csproj" />
+    <ProjectReference Include="..\IR-tech-test.Service\IR-tech-test.Service.csproj" />
   </ItemGroup>
 
 </Project>

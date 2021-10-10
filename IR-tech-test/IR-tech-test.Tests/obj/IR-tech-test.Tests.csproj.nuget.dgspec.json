@@ -4,6 +4,79 @@
     "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Tests\\IR-tech-test.Tests.csproj": {}
   },
   "projects": {
+    "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Api\\IR-tech-test.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Api\\IR-tech-test.Api.csproj",
+        "projectName": "IR-tech-test.Api",
+        "projectPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Api\\IR-tech-test.Api.csproj",
+        "packagesPath": "C:\\Users\\JAckoff\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\JAckoff\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Service\\IR-tech-test.Service.csproj": {
+                "projectPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Service\\IR-tech-test.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Collections": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Service\\IR-tech-test.Service.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -102,11 +175,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\IR-tech-test.Api.csproj": {
-                "projectPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\IR-tech-test.Api.csproj"
+              "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Api\\IR-tech-test.Api.csproj": {
+                "projectPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Api\\IR-tech-test.Api.csproj"
               },
-              "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\IR-tech-test.csproj": {
-                "projectPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\IR-tech-test.csproj"
+              "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Service\\IR-tech-test.Service.csproj": {
+                "projectPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Service\\IR-tech-test.Service.csproj"
+              },
+              "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Web\\IR-tech-test.Web.csproj": {
+                "projectPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Web\\IR-tech-test.Web.csproj"
               }
             }
           }
@@ -171,14 +247,14 @@
         }
       }
     },
-    "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\IR-tech-test.Api.csproj": {
+    "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Web\\IR-tech-test.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\IR-tech-test.Api.csproj",
-        "projectName": "IR-tech-test.Api",
-        "projectPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\IR-tech-test.Api.csproj",
+        "projectUniqueName": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Web\\IR-tech-test.Web.csproj",
+        "projectName": "IR-tech-test.Web",
+        "projectPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Web\\IR-tech-test.Web.csproj",
         "packagesPath": "C:\\Users\\JAckoff\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\obj\\",
+        "outputPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JAckoff\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -208,20 +284,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "Microsoft.AspNet.WebApi.Core": {
-              "target": "Package",
-              "version": "[5.2.7, )"
-            },
-            "Newtonsoft.Json": {
-              "target": "Package",
-              "version": "[13.0.1, )"
-            },
-            "System.Collections": {
-              "target": "Package",
-              "version": "[4.3.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

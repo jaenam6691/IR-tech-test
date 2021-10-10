@@ -1997,6 +1997,22 @@
         "runtime": {
           "bin/placeholder/IR-tech-test.Service.dll": {}
         }
+      },
+      "IR-tech-test.Web/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "IR-tech-test.Service": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/IR-tech-test.Web.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/IR-tech-test.Web.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -6595,20 +6611,26 @@
     },
     "IR-tech-test.Api/1.0.0": {
       "type": "project",
-      "path": "../IR-tech-test/IR-tech-test.Api.csproj",
-      "msbuildProject": "../IR-tech-test/IR-tech-test.Api.csproj"
+      "path": "../IR-tech-test.Api/IR-tech-test.Api.csproj",
+      "msbuildProject": "../IR-tech-test.Api/IR-tech-test.Api.csproj"
     },
     "IR-tech-test.Service/1.0.0": {
       "type": "project",
       "path": "../IR-tech-test.Service/IR-tech-test.Service.csproj",
       "msbuildProject": "../IR-tech-test.Service/IR-tech-test.Service.csproj"
+    },
+    "IR-tech-test.Web/1.0.0": {
+      "type": "project",
+      "path": "../IR-tech-test.Web/IR-tech-test.Web.csproj",
+      "msbuildProject": "../IR-tech-test.Web/IR-tech-test.Web.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\IR-tech-test.csproj",
       "FluentAssertions >= 6.1.0",
       "IR-tech-test.Api >= 1.0.0",
+      "IR-tech-test.Service >= 1.0.0",
+      "IR-tech-test.Web >= 1.0.0",
       "Microsoft.Extensions.Logging.Abstractions >= 5.0.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "Moq >= 4.16.1",
@@ -6643,11 +6665,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\IR-tech-test.Api.csproj": {
-              "projectPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\IR-tech-test.Api.csproj"
+            "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Api\\IR-tech-test.Api.csproj": {
+              "projectPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Api\\IR-tech-test.Api.csproj"
             },
-            "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\IR-tech-test.csproj": {
-              "projectPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\IR-tech-test.csproj"
+            "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Service\\IR-tech-test.Service.csproj": {
+              "projectPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Service\\IR-tech-test.Service.csproj"
+            },
+            "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Web\\IR-tech-test.Web.csproj": {
+              "projectPath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Web\\IR-tech-test.Web.csproj"
             }
           }
         }
@@ -6713,15 +6738,6 @@
     }
   },
   "logs": [
-    {
-      "code": "NU1104",
-      "level": "Error",
-      "message": "Unable to find project 'C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\IR-tech-test.csproj'. Check that the project reference is valid and that the project file exists.",
-      "libraryId": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\IR-tech-test.csproj",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v3.1"
-      ]
-    },
     {
       "code": "NU1701",
       "level": "Warning",
