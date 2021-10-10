@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\IR-tech-test\IR-tech-test.Api.csproj" />
-    <ProjectReference Include="..\IR-test-test\IR-tech-test.csproj" />
+    <ProjectReference Include="..\IR-tech-test\IR-tech-test.csproj" />
   </ItemGroup>
 
 </Project>

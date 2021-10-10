@@ -33,8 +33,11 @@ namespace IR_tech_test.Controllers
     {
       var orders = await _homeService.GetCumulativeOrdersAsync(model.Depth);
 
-      model.BuyOrders = orders?.Where(x => x.OrderType == Enums.OrderTypeEnum.LimitBid).ToList();
-      model.SellOrders = orders?.Where(x => x.OrderType == Enums.OrderTypeEnum.LimitOffer).ToList();
+      if (orders != null)
+      {
+        model.BuyOrders = orders?.Where(x => x.OrderType == Enums.OrderTypeEnum.LimitBid).ToList();
+        model.SellOrders = orders?.Where(x => x.OrderType == Enums.OrderTypeEnum.LimitOffer).ToList();
+      }
 
       return View(model);
     }

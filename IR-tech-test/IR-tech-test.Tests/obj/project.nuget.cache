@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "6LxWf8E45HvZXCkZue7bUDt58Xa+JsNJxdzlWqAn0R7mgFtBwbAu2JdGsxdYD/1W/SZzEs3sXx8PepZGZLoaBA==",
-  "success": true,
+  "dgSpecHash": "2yrAPrc/rXMMAah/k7spyJHQueDt5fwaN2X55WRWZt9B//LUn9iW6bL5eiXQgUIiqfkx6Fm2h+v7X4yBKbV8pA==",
+  "success": false,
   "projectFilePath": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test.Tests\\IR-tech-test.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JAckoff\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
@@ -122,6 +122,15 @@
     "C:\\Users\\JAckoff\\.nuget\\packages\\xunit.runner.visualstudio\\2.4.0\\xunit.runner.visualstudio.2.4.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Unable to find project 'C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\IR-tech-test.csproj'. Check that the project reference is valid and that the project file exists.",
+      "libraryId": "C:\\Users\\JAckoff\\Documents\\IR-tech-test\\IR-tech-test\\IR-tech-test\\IR-tech-test.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",
