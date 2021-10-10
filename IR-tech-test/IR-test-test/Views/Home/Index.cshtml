@@ -8,6 +8,10 @@
   @Html.TextBoxFor(x => x.Depth)
   <input type="submit" />
 
+  @if(!(Model.BuyOrders.Any() && Model.SellOrders.Any())) {
+    <h1>No Matching Orders</h1>
+  }
+
   @if (Model.BuyOrders.Any())
   {
     <h1>Buy Orders</h1>
