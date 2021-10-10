@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using IR_tech_test.Enums;
 using IR_tech_test.Service.Contracts;
 using IR_tech_test.Service.Models;
 using IR_tech_test.Service.Models.Api;
@@ -48,6 +46,11 @@ namespace IR_tech_test.Controllers
       if (orders == null)
       {
         orders = await _orderBookService.GetAsync();
+
+        // Issue with the API or data D.N.E - return 404
+        if (orders == null)
+          return NotFound();
+
         _memoryCache.Set("orderBook", orders);
       }
 

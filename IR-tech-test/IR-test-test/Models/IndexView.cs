@@ -1,6 +1,5 @@
 using IR_tech_test.Service.Models;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 
 namespace IR_tech_test.Models
 {
