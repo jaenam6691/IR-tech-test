@@ -1,13 +1,14 @@
-using System;
+using IR_tech_test.Service.Models;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace IR_tech_test.Models
 {
   public class IndexView
   {
-    [Required]
-    [MinLength(1)]
-    [RegularExpression("^[0-9]*$", ErrorMessage = "UPRN must be numeric")]
     public double Depth { get; set; }
+
+    public ICollection<OrderModel> BuyOrders { get; set; } = new List<OrderModel>();
+    public ICollection<OrderModel> SellOrders { get; set; } = new List<OrderModel>();
   }
 }

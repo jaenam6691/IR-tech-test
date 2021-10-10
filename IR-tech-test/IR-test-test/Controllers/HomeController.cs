@@ -25,14 +25,17 @@ namespace IR_tech_test.Controllers
 
     public IActionResult Index()
     {
-      return View();
+      return View(new IndexView());
     }
 
     [HttpPost]
     public async Task<IActionResult> Index(IndexView model)
     {
       var orders = await _homeService.GetCumulativeOrders(model.Depth);
-      return Ok(orders);
+      model.BuyOrders = orders.Where(x => x.OrderType == Enums.OrderTypeEnum.LimitBid).ToList();
+      model.SellOrders = orders.Where(x => x.OrderType == Enums.OrderTypeEnum.LimitOffer).ToList();
+
+      return View(model);
     }
   }
 }

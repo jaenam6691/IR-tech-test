@@ -1,7 +1,79 @@
 ﻿@model IndexView
-
+@{
+  var cumulativeBuyVolume = 0.0;
+  var cumulativeSellVolume = 0.0;
+}
 @using (Html.BeginForm())
 {
   @Html.TextBoxFor(x => x.Depth)
   <input type="submit" />
+
+  @if (Model.BuyOrders.Any())
+  {
+    <h1>Buy Orders</h1>
+    <table id="buyOrders">
+      <tbody>
+        <tr>
+          <th>Price</th>
+          <th>Volume</th>
+          <th>Cumulative Volume</th>
+        </tr>
+
+        @foreach (var order in Model.BuyOrders)
+        {
+          cumulativeBuyVolume += order.Price * order.Volume;
+          <tr>
+            <td>@order.Price</td>
+            <td>@order.Volume</td>
+            <td>@cumulativeBuyVolume</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  }
+  @if (Model.SellOrders.Any())
+  {
+    <h1>Sell Orders</h1>
+    <table id="sellOrders">
+      <tbody>
+        <tr>
+          <th>Price</th>
+          <th>Volume</th>
+          <th>Cumulative Volume</th>
+        </tr>
+
+        @foreach (var order in Model.SellOrders)
+        {
+          cumulativeSellVolume += order.Price * order.Volume;
+          <tr>
+            <td>@order.Price</td>
+            <td>@order.Volume</td>
+            <td>@cumulativeSellVolume</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  }
 }
+
+<style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  #buyOrders {
+    margin-bottom: 40px;
+  }
+</style>
