@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IR-tech-test.Service", "IR-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IR-tech-test.Tests", "IR-tech-test.Tests\IR-tech-test.Tests.csproj", "{0077A8FA-83CC-40D2-945D-6003B5CEF9A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IR-tech-test.Web", "IR-tech-test.Web\IR-tech-test.Web.csproj", "{B28F4A28-F899-4EF3-B6B5-EA7864025084}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IR-tech-test.Web", "IR-tech-test.Web\IR-tech-test.Web.csproj", "{B28F4A28-F899-4EF3-B6B5-EA7864025084}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{0C3BB75D-16EB-487B-B647-7FF4EBEAA431}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
